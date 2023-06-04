@@ -1,0 +1,145 @@
+<!-- 
+    *********************
+    Author : Fahad Kamran
+    Date : 04-June-2023
+    *********************
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CupBeans :: Contact Us</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- global css / custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- fontawesome -->
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- navbar js -->
+    <script async src="./assets/js/navbar.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header bgSecondary py-3">
+        <nav class="vanbar">
+            <div class="container-xxl">
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="index.html" class="d-inline-block">
+                        <img src="./assets/images/logo.webp" alt="logo" class="logo">
+                    </a>
+                    <div class="navbar-content" id="drawer" tabindex="-1" id="drawer">
+                        <a href="index.html" class="nav-links">Home</a>
+                        <a href="contact-us.html" class="nav-links active">Contact Us</a>
+                    </div>
+                    <button class="menubar" id="toogle-drawer" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#drawer" aria-controls="drawer">
+                        <i class="fa-solid fa-bars fs-22"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header -->
+    <!-- main -->
+    <main class="contact-us">
+        <div class="bg-white py-5">
+            <div class="container-xl">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-xl-9">
+                        <div class="text-center">
+                            <h3 class="mb-4 fs-22 fw-normal">QUESTIONS OR CONCERNS?</h3>
+                            <h5 class="mb-4 fs-18">Come Grab a Cup!</h5>
+                            <p class="mb-4">Have a comment or a question? Ready to place your order for delivery or
+                                pickup?
+                                Use the form above or give us a call and we can get your order ready for you. Send us a
+                                message, and we will get back to you as soon as possible.</p>
+                            <h5 class="mb-4 fs-18">CupBeans</h5>
+                            <p class="mb-4">London, Greater London, England, United Kingdom</p>
+                            <h5 class="mb-4 fs-18">Hours</h5>
+                            <p class="mb-4">Monday - Friday: 9am - 6pm <br> Saturday - Sunday: 9am - 5pm</p>
+                            <button class="primaryBtn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#dropuslineform" aria-expanded="false" aria-controls="dropuslineform">
+                                Drop us a line!
+                            </button>
+                            <div class="collapse" id="dropuslineform">
+                                <form action="#" method="post">
+                                    <div class="row mt-4">
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-floating mb-4">
+                                                <input type="text" class="form-control" placeholder="Name" name="name">
+                                                <label>Name</label>
+                                            </div>
+                                            <div class="form-floating mb-4">
+                                                <input type="email" class="form-control" placeholder="Email"
+                                                    name="email">
+                                                <label>Email*</label>
+                                            </div>
+                                            <div class="form-floating mb-4">
+                                                <input type="text" class="form-control"
+                                                    placeholder="Pick Up or Delivery?" name="pickupdelivery">
+                                                <label>Pick Up or Delivery?</label>
+                                            </div>
+                                            <div class="form-floating mb-4">
+                                                <input type="text" class="form-control"
+                                                    placeholder="Pickup/Delivery Time" name="pickupdeliverytime">
+                                                <label>Pickup/Delivery Time</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-group mb-4">
+                                                <textarea name="message" rows="7" class="form-control"
+                                                    placeholder="Message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 submit">
+                                            <button type="submit" class="primaryBtn">Send</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="googleMap">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d79466.49818788136!2d-0.1976257417722765!3d51.50719694535651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20United%20Kingdom!3m2!1d51.5072178!2d-0.12758619999999998!5e0!3m2!1sen!2s!4v1685892709782!5m2!1sen!2s"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    <!-- main -->
+    <!-- footer -->
+    <footer class="footer bgSecondary py-5">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-4">
+                    <p class="mb-0 text-center text-md-start fs-14">COPYRIGHT © 2023 CUPBEANS - ALL RIGHTS RESERVED.</p>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <p class="mb-0 text-center text-md-end fs-14">POWERED BY SOLUTIONDOT</p>
+                </div>
+                <div class="col-12 text-center">
+                    <a href="privacy-policy.html" class="fs-14">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+    <!-- bootstrap js -->
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery js -->
+    <script src="./assets/vendor/jquery/js/jquery-3.6.4.min.js"></script>
+    <!-- custom js -->
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

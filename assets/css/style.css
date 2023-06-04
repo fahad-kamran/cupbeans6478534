@@ -1,0 +1,298 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+:root {
+    /* **********COLORS********** */
+    --primary-color: #9c1c34;
+    --secondary-color: #333333;
+    --text-color: #5e5e5e;
+    --text-dark: #000;
+    --text-white: #fff;
+    /* **********COLORS********** */
+
+    /* **********FONTS********** */
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Quicksand', sans-serif;
+    /* **********FONTS********** */
+
+    --transition-anim: .3s all ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-secondary);
+    letter-spacing: 1px;
+}
+
+body p {
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: var(--font-primary);
+}
+
+.bgPrimary {
+    background-color: var(--primary-color);
+}
+
+.textPrimary {
+    color: var(--primary-color);
+}
+
+.bgSecondary {
+    background-color: var(--secondary-color);
+}
+
+.textSecondary {
+    color: var(--secondary-color);
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+/* primary btn */
+.primaryBtn {
+    border: 1px solid var(--primary-color);
+    padding: 15px 40px;
+    color: var(--primary-color);
+    background-color: var(--text-white);
+    text-transform: uppercase;
+    font-size: 17px;
+    position: relative;
+    transition: var(--transition-anim);
+    font-weight: 500;
+}
+
+.primaryBtn:hover {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+}
+
+.primaryBtn::before,
+.primaryBtn::after {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 1px;
+    background-color: var(--primary-color);
+    top: calc(50% - .5px);
+    transition: var(--transition-anim);
+}
+
+.primaryBtn::before {
+    left: 20px;
+}
+
+.primaryBtn::after {
+    right: 20px;
+}
+
+.primaryBtn:hover:before,
+.primaryBtn:hover:after {
+    background-color: var(--text-white);
+}
+
+/* primary btn */
+/* header */
+header.header .nav-links {
+    display: inline-block;
+    color: #a9a9a9;
+    transition: var(--transition-anim);
+    margin-right: 30px;
+    position: relative;
+}
+
+header.header .nav-links:hover {
+    color: #f7abb2;
+}
+
+header.header .nav-links.active::before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 1px;
+    background-color: #a9a9a9;
+    left: -18px;
+    top: calc(50% - 0.5px);
+}
+
+header.header .menubar {
+    all: unset;
+    cursor: pointer;
+    color: var(--text-white);
+}
+
+/* header */
+
+/* home-hero */
+.home .hero {
+    background: url('../images/hero.webp') center / cover;
+    min-height: 300px;
+}
+
+/* home-hero */
+
+/* home-visit-us */
+.home .visit-us .title {
+    font-weight: 400;
+}
+
+.home .visit-us a {
+    border: 1px solid var(--text-white);
+    padding: 15px 40px;
+    color: var(--text-white);
+    text-transform: uppercase;
+    font-size: 17px;
+    position: relative;
+    transition: var(--transition-anim);
+    font-weight: 500;
+}
+
+.home .visit-us a:hover {
+    background-color: var(--text-white);
+    color: var(--text-dark);
+    border-color: var(--text-dark);
+}
+
+.home .visit-us a::before,
+.home .visit-us a::after {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 1px;
+    background-color: var(--text-white);
+    top: calc(50% - .5px);
+    transition: var(--transition-anim);
+}
+
+.home .visit-us a::before {
+    left: 20px;
+}
+
+.home .visit-us a::after {
+    right: 20px;
+}
+
+.home .visit-us a:hover::before,
+.home .visit-us a:hover::after {
+    background-color: var(--text-dark);
+}
+
+/* home-visit-us */
+
+/* privacy-policy */
+
+
+/* privacy-policy */
+
+/* footer */
+
+footer.footer {
+    color: #a9a9a9;
+}
+
+footer.footer a {
+    color: #a9a9a9;
+    transition: var(--transition-anim);
+    text-transform: uppercase;
+}
+
+footer p {
+    color: #a9a9a9;
+}
+
+footer.footer a:hover {
+    color: #f7abb2;
+}
+
+/* footer */
+
+/* desktop screen */
+@media (min-width: 1024px) {
+    .home .hero {
+        min-height: 75vh;
+    }
+
+    .home .visit-us .title {
+        font-size: 50px;
+    }
+}
+
+/* tablet screen */
+@media (max-width: 768px) {
+    header.header .logo {
+        max-width: 300px;
+        height: auto;
+    }
+
+    #drawer.offcanvas.offcanvas-start {
+        padding: 50px 40px;
+    }
+
+    #drawer.offcanvas.offcanvas-start .nav-links {
+        margin-right: 0;
+        display: block;
+        padding-bottom: 20px;
+        font-size: 22px;
+    }
+
+    #drawer.offcanvas.offcanvas-start .nav-links.active {
+        font-weight: 600;
+    }
+
+    #drawer.offcanvas.offcanvas-start .nav-links.active::before {
+        display: none;
+    }
+}
+
+/* mobile screen */
+@media (max-width: 576px) {
+    header.header .logo {
+        max-width: 200px;
+        height: auto;
+    }
+}
