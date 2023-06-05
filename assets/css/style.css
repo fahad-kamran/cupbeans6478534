@@ -166,6 +166,10 @@ header.header .menubar {
     color: var(--text-white);
 }
 
+.header .offcanvas.offcanvas-start {
+    width: 320px;
+}
+
 /* header */
 
 /* home-hero */
@@ -223,11 +227,6 @@ header.header .menubar {
 }
 
 /* home-visit-us */
-
-/* privacy-policy */
-
-
-/* privacy-policy */
 
 /* footer */
 
